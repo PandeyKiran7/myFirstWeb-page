@@ -85,6 +85,11 @@ body {
   line-height: 1;
 }
 
+#home-main .heading h1:hover{
+  color: #000;
+  -webkit-text-stroke: 1px transparent;
+}
+
 #homelast{
     padding: 10vw 0vw;
 }
@@ -144,7 +149,14 @@ height: inherit;
 #fright .image{
     width: 90%;
     height: 90%;
+    overflow: hidden;
     background-color: green;
+}
+
+#fright .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fleftelm{
@@ -172,14 +184,14 @@ font-weight: 400;
     opacity: .5;
 }
 
-#btndiv{
+.btndiv{
   margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#btndiv button{
+.btndiv button{
   padding: 1.3vw 2.5vw;
   border-radius: 100px;
   border: 2px solid #e6e6e6;
@@ -226,6 +238,7 @@ font-weight: 400;
   width: 100%;
   height: 270px;
   overflow: hidden;
+  border-radius: 6px;
   background-color: forestgreen;
 }
 
@@ -242,3 +255,37 @@ width: fit-content;
   height: 100%;
   object-fit: cover;
 }
+
+.slide h3{
+  font-size: 1.2vw;
+  font-weight: 400;
+  letter-spacing: -.5px;
+}
+
+.inspiro{
+  width: 100%;
+ padding: 5vw 15vw;
+}
+
+.inspiro h1{
+  font-size: 3.6vw;
+  margin-top: 3vw;
+  letter-spacing: -.5px;
+  width: 30%;
+  font-weight: 400;
+}
+i{
+  padding:5px;
+  color: orange;
+}
+
+.circle-out{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:#000 ;
+  animation: 1s;
+}
+
+/* Animation */
+
