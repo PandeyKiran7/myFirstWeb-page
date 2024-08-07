@@ -1,30 +1,244 @@
-/* Import */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
-.navbar
-{
+*::selection{
+  color: #ffF;
+  background-color: #000;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  background-color: #fff;
+}
+
+#home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  /* border: 2px solid red; */
+}
+
+#nav {
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav img {
+  width: 100px;
+}
+
+#nav #right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-size: 1vw;
+}
+
+#nav i {
+  margin-top: 3px;
+  font-size: 20px;
+}
+
+#home #home-main {
+  width: 100%;
+  padding: 15vw 15vw;
+  /* background-color: red; */
+}
+
+#home-main h1 {
+  font-weight: 400;
+  font-size: 1.5vw;
+  letter-spacing: -1px;
+}
+
+.heading {
+  display: flex;
+  gap: 40px;
+}
+
+#home-main .heading h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: -4px;
+  line-height: 1;
+}
+
+#homelast{
+    padding: 10vw 0vw;
+}
+
+#homelast  p {
+    width:60%;
+    font-size: 1.3vw;
+    font-weight: 400;
+    letter-spacing: 0.8;
+    /* padding-top: 30px; */
+}
+
+#homelast p::selection{
+    color: #ffF;
+    background-color: #000;
+}
+
+#featured{
+    padding: 10vw 15vw;
+}
+
+.fheading>h1{
+line-height: 1;
+font-size: 4vw;
+font-weight:400;
+}
+
+.fheading>h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+#fimages{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+    /* border: 2px solid red; */
+}
+
+#fleft{
+    overflow: hidden;
+width:45%;
+height: inherit;
+/* border: 1px solid skyblue; */
+}
+#fright{
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
-    justify-content: s;
+justify-content: flex-end;
+width:45%;
+height: inherit;
+/* border: 1px solid green; */
 }
 
-.navbar :where(.nav-section, .search-form, .nav-logo)
-{
+#fright .image{
+    width: 90%;
+    height: 90%;
+    background-color: green;
+}
+
+.fleftelm{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+
+.fleftelm h3{
+font-size: 1.2vw;
+font-weight: 400;
+}
+
+.fleftelm h1{
+    margin: 1.5vw 0;
+    font-size: 2.3vw;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.fleftelm h5{
+    opacity: .5;
+}
+
+#btndiv{
+  margin: 10px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.navbar :where(.logo-image, .user)
-{
-    width: 42px;
-    cursor: pointer;
-    border-radius: 50%;
+#btndiv button{
+  padding: 1.3vw 2.5vw;
+  border-radius: 100px;
+  border: 2px solid #e6e6e6;
+  background-color: white;
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+#dev{
+ width: 100%;
+ padding: 5vw 15vw;
+}
+
+#dev h1{
+  font-size: 3.8vw;
+  font-weight: 400;
+  width: 60%;
+  line-height:1;
+  text-transform: capitalize;
+}
+
+#dev p{
+  font-size: 1.5vw;
+  margin-top: 3vw;
+  letter-spacing: -.5px;
+  width: 60%;
+  font-weight: 300;
+}
+
+#slides{
+  padding: 3vw 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide{
+  width: 30%;
+  /* background-color: red; */
+  flex-wrap: wrap;
+}
+
+.slide .img{
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+  background-color: forestgreen;
+}
+
+.slide .tag{
+  padding: 10px 22px;
+margin: 20px 0px;
+background-color: #f7f7f7;
+border-radius: 100px;
+width: fit-content;
+}
+
+.slide .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
